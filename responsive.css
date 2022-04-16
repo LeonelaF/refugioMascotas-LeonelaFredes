@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Hurricane&family=Inter:wght@400;500;700&display=swap");
+
+body {
+  background: radial-gradient(
+    circle,
+    rgba(238, 234, 222, 1) 0%,
+    rgba(181, 154, 133, 1) 61%,
+    rgba(76, 63, 55, 1) 100%
+  );
+  font-family: "Arvo", serif;
+}
+h1 {
+  margin: 0px 0px 0px 50px;
+  font-family: "Hurricane", cursive;
+  font-size: 50px;
+  text-align: center;
+}
+header {
+  grid-area: header;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+nav {
+  grid-area: nav;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+nav ul li {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+main {
+  grid-area: main;
+  padding: 20px;
+  text-align: justify;
+}
+main h2 {
+  text-align: center;
+  font-family: "Hurricane", cursive;
+  font-size: xx-large;
+}
+main h3 {
+  text-align: center;
+  font-family: "Hurricane", cursive;
+  font-size: xx-large;
+}
+footer {
+  grid-area: footer;
+  margin: auto;
+  bottom: 0;
+  text-align: center;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    grid-template-areas:
+      "header nav"
+      "main main"
+      "footer footer";
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-columns: 2fr 3fr;
+  }
+  header {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  nav {
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5px;
+  }
+  nav ul li {
+    padding-right: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .contenedor {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+      "nav header"
+      "nav main"
+      "footer footer";
+    grid-template-rows: stretch 3fr stretch;
+    grid-template-columns: 0.5fr 3.5fr;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  nav {
+    justify-content: center;
+  }
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+  main div{
+    display:flex;
+    flex-direction: row;
+  }
+  main div form{
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo{
+    margin: 20px;
+  }
+  .botones{
+    display: inline-block;
+    margin-left:450px;
+  }
+}

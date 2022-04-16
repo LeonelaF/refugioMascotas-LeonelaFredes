@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Hurricane&family=Inter:wght@400;500;700&display=swap");
+
+body {
+  background: radial-gradient(
+    circle,
+    rgba(238, 234, 222, 1) 0%,
+    rgba(181, 154, 133, 1) 61%,
+    rgba(76, 63, 55, 1) 100%
+  );
+  font-family: "Arvo", serif;
+  padding: 10px;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 105px 0px 0px;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+h1 {
+  position: relative;
+  margin: 0px 0px 0px 50px;
+  font-family: "Hurricane", cursive;
+  font-size: 97px;
+}
+h2{
+  position: relative;
+  text-align: center;
+  font-family: "Hurricane", cursive;
+  font-size: 97px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+hr {
+  border-color: #4c3f37;
+}
+p {
+  line-height: 2;
+  text-align: justify;
+}
+h3 {
+  font-size: 40px;
+}
+.contenedor {
+  display: grid;
+  height: 100vh;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header nav"
+    "main main"
+    "footer footer";
+  grid-template-rows: 0.5fr 3fr 0.5fr;
+  grid-template-columns: 2fr 2fr;
+}
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+}
+#galeria h5 {
+  font-size: 30px;
+}
+#galeria img {
+  width: 25%;
+}
+form input {
+  display: block;
+  margin: 1em 0 2em;
+}
+form textarea {
+  display: block;
+  margin: 1em 0 1em;
+}
+button {
+  border-radius: 10px;
+  margin-right: 50px;
+  padding: 5px;
+}
+th,
+td {
+  border-style: double;
+}
+.tipos {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
