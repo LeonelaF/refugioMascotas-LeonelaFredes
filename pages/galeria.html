@@ -3,13 +3,15 @@
 
 <head>
     <title> Patitas felices | Refugio de mascotas </title>
-    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../responsive.css" />
 </head>
 
 <body>
-    <header>
-        <nav id="menu">
+    <div class="contenedor">
+        <header>
             <h1>Refugio Patitas felices</h1>
+        </header>
+        <nav>
             <ul>
                 <li><a href="../index.html"> Inicio </a></li>
                 <li><a href="galeria.html"> Galería </a></li>
@@ -18,56 +20,68 @@
                 <li><a href="contacto.html"> Contacto </a></li>
             </ul>
         </nav>
-        <hr>
-    </header>
-    <main id="galeria">
-        <h3>Gatos</h3>
-        <section>
-            <article>
-                <h5>Lluna</h5>
-                <img src="../assets/images/lluna.png" alt="gatita-lluna">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet eaque omnis deserunt
-                    ullam id
-                    debitis, molestias tempore? Accusantium reiciendis quaerat minus impedit nostrum eaque? Quae
-                    exercitationem
-                    maiores, eaque deserunt libero ipsam excepturi aperiam maxime! Consequuntur quaerat quos minus
-                    cupiditate
-                    dolores? Atque ea magni aliquid saepe voluptas, excepturi cum odit.</p>
-            </article>
-            <article>
-                <h5>Onix</h5>
-                <img src="../assets/images/negro.png" alt="gatito-onix">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla temporibus, nihil debitis
-                    necessitatibus
-                    recusandae molestias natus sed, pariatur, facilis eveniet odio aspernatur nam harum cumque.</p>
-            </article>
-        </section>
-        <h3>Perros</h3>
-        <section>
-            <article>
-                <h5>Maia</h5>
-                <img src="../assets/images/maia1.png" alt="perrita-maia">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt et ad soluta voluptate harum iure
-                    suscipit?
-                    Animi, nulla quibusdam qui consequatur dignissimos aliquam laborum dicta praesentium?</p>
-            </article>
-            <article>
-                <h5>Lucia</h5>
-                <img src="../assets/images/lucia3.png" alt="perrita-lucia">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet repudiandae debitis beatae
-                    vitae illo.
-                </p>
-            </article>
-        </section>
-    </main>
+        <main>
+            <h3>Gatos</h3>
+            <section>
+                <article>
+                    <h5>Lluna</h5>
+                    <div class="content">
+                        <img src="../assets/images/lluna.png" alt="gatita-lluna">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eveniet eaque omnis
+                            deserunt
+                            ullam id
+                            debitis, molestias tempore? Accusantium reiciendis quaerat minus impedit nostrum eaque? Quae
+                            exercitationem
+                            maiores, eaque deserunt libero ipsam excepturi aperiam maxime! Consequuntur quaerat quos
+                            minus
+                            cupiditate
+                            dolores? Atque ea magni aliquid saepe voluptas, excepturi cum odit.</p>
+                    </div>
 
-    <footer>
-        <hr>
-        <a target="_blank" href="http://facebook.com"> Facebook ||</a>
-        <a target="_blank" href="http://instagram.com"> Instagram ||</a>
-        <a target="_blank" href="http://twitter.com"> Twitter </a>
-    </footer>
-
+                </article>
+                <article>
+                    <h5 class="title-right">Onix</h5>
+                    <div class="content">
+                        <p class="content-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+                            temporibus, nihil debitis
+                            necessitatibus
+                            recusandae molestias natus sed, pariatur, facilis eveniet odio aspernatur nam harum cumque.
+                        </p>
+                        <img src="../assets/images/negro.png" alt="gatito-onix">
+                    </div>
+                </article>
+            </section>
+            <h3>Perros</h3>
+            <section>
+                <article>
+                    <h5>Maia</h5>
+                    <div class="content">
+                        <img src="../assets/images/maia1.png" alt="perrita-maia">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt et ad soluta voluptate harum
+                            iure
+                            suscipit?
+                            Animi, nulla quibusdam qui consequatur dignissimos aliquam laborum dicta praesentium?</p>
+                    </div>
+                </article>
+                <article>
+                    <h5 class="title-right">Lucia</h5>
+                    <div class="content">
+                        <p class="content-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet
+                            repudiandae debitis
+                            beatae
+                            vitae illo.
+                        </p>
+                        <img src="../assets/images/lucia3.png" alt="perrita-lucia">
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <a target="_blank" href="http://facebook.com"><img src="../assets/icons/facebook.png" alt="fb" /></a>
+            <a target="_blank" href="http://instagram.com"><img src="../assets/icons/instagram.png" alt="ig" /></a>
+            <a target="_blank" href="http://twitter.com"><img src="../assets/icons/twitter.png" alt="tw" /></a>
+        </footer>
+    </div>
 </body>
 
 </html>
